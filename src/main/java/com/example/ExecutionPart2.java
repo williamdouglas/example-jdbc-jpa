@@ -6,21 +6,21 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import org.h2.tools.Server;
 
-public class Application {
+public class ExecutionPart2 {
 
     public static void main(String[] args) throws SQLException {
         startDatabase();
 
-        final EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("com.example");
+        final EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("part2-DIO");
 
         final EntityManager entityManager = entityManagerFactory.createEntityManager();
 
-        Customer customer = new Customer();
-        customer.setFirstName("Dennys");
-        customer.setLastName("Fredericci");
+        // Customer customer = new Customer();
+        // customer.setFirstName("Dennys");
+        // customer.setLastName("Fredericci");
 
         entityManager.getTransaction().begin();
-        entityManager.persist(customer);
+        // entityManager.persist(customer);
         entityManager.getTransaction().commit();
 
         System.out.println("Open your browser and navigate to http://localhost:8082/");

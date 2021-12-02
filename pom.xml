@@ -16,6 +16,13 @@
 
   <dependencies>
 
+    <!-- JPA/EclipseLink -->
+    <dependency>
+      <groupId>org.eclipse.persistence</groupId>
+      <artifactId>eclipselink</artifactId>
+      <version>3.1.0-M1</version>
+    </dependency>
+
     <!-- JPA/Hibernate -->
     <dependency>
       <groupId>org.hibernate</groupId>
@@ -31,5 +38,4 @@
     </dependency>
 
   </dependencies>
-
 </project>
